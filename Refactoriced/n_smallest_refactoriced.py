@@ -1,10 +1,12 @@
 # Código (FALLO)
 
+
 def first_n_smallest(arr, n):
+
     lista = []
-    arr_ord = sorted(arr)
-    [lista.append(num) if num in arr_ord[:n] else None for num in arr]
-    return lista[:n]
+    [lista.append(num) if num in sorted(arr)[:n] and lista.count(num) < sorted(arr)[:n].count(num) else None for num in arr]
+
+    return lista
 
 # Testing
 

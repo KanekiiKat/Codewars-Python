@@ -1,5 +1,4 @@
-# Código (FALLO)
-
+# Código
 
 def first_n_smallest(arr, n):
 
